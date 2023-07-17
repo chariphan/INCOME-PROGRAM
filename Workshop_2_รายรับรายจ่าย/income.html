@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./income.css"/>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>Workshop2</title>
+</head>
+<body>
+    <h2>โปรแกรมบัญชีรายรับ-รายจ่าย</h2>
+    <div class="container">
+        
+        <h4>ยอดเงินคงเหลือ(บาท)</h4>
+        <h1 id="balance">฿0.00</h1>
+        <!--กล่องแสดงรายรับ รายจ่าย-->
+        <div class="income-expense-container">
+            <!--รายรับ-->
+            <div>
+                <h4>รายรับ</h4>
+                <p id="money-plus" class="money plus">฿0.00</p>
+            </div>
+            <!--รายจ่าย-->
+            <div>
+                <h4>รายจ่าย</h4>
+                <p id="money-minus" class="money minus">฿0.00</p>
+            </div>
+        </div>
+
+        <h3>ประวัติธุรกรรม</h3>
+        <ul id="list" class="list">
+            <!--
+            <li class="minus">ค่าซ่อมรถ <span>฿400</span>
+                <button class="delete-btn">X</button></li>
+            
+            <li class="plus">เงินเดือน <span>฿400</span>
+                <button class="delete-btn">X</button></li>
+            -->
+            
+        </ul>
+
+        <h3>เพิ่มธุรกรรม</h3>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="text">ชื่อธุกรกรรม</label>
+                <input id="text" type="text" placeholder="ระบุชื่อธุรกรรม">
+            </div>
+            <div class="form-control">
+                <label for="text">จำนวนเงิน<br>
+                (+รายรับ,-รายจ่าย)</label>
+                <input id="amount" type="number" placeholder="ระบุจำนวนเงิน">
+            </div>
+            <!--สร้างปุ่ม-->
+            <button class="btn">เพิ่มธุรกรรม</button>
+
+        </form>
+
+    </div>
+
+
+
+
+    <script src="./income.js"></script>
+    
+</body>
+</html>
